@@ -149,8 +149,10 @@
             display: none;
         }
         .s31 img{
-            width: 700px;
-            height: 650px;
+            width: 100%;
+            height: 100%;
+            /* width: 700px;
+            height: 650px; */
             object-fit: cover;
             margin-top: 4%;
             padding-bottom: 5%;
@@ -164,7 +166,7 @@
             margin-top: -2%;
             margin-left: 4%;
             color:#069;
-            font-size: xx-large;
+            font-size: 50px;
             font-weight: bold;
         }
 
@@ -183,7 +185,7 @@
             text-align: center;
             overflow: hidden;
             margin: 50px;
-            margin-left: 100px;
+            margin-left: 150px;
         }
         .container img {
             width: 100%;
