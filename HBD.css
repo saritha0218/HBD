@@ -14,20 +14,22 @@
         }
         .option {
             cursor: pointer;
-            padding: 10px 15px;
+            padding: 20px 25px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            font-size: larger;
         }
         .option:hover {
             background-color: #555;
         }
         .letter {
-            margin: 60px;
-            padding: 15px;
+            margin: 100px;
+            padding: 25px;
             background-image: url(./BGL.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             border-radius: 8px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         }
@@ -71,10 +73,10 @@
             padding: 10px;
         }
         .image-scroll-container img {
-            height: 280px;
+            height: 480px;
             border-radius: 8px;
             object-fit: cover;
-            width: 280px; /* Set a fixed width to ensure images align properly */
+            width: 480px; /* Set a fixed width to ensure images align properly */
         }
         .scrolling-images {
             display: flex;
@@ -107,8 +109,8 @@
             display: none;
         }
         .photo-paragraph-item img {
-            width: 200px;
-            height: 250px;
+            width: 600px;
+            height: 650px;
             object-fit: cover;
             border-radius: 8px;
         }
@@ -164,17 +166,19 @@
 
         .container {
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
         }
         .container > div {
             position: relative;
-            width: 300px;
-            height: 300px;
+            width: 700px;
+            height: 700px;
             border: 1px solid #ccc;
             text-align: center;
             overflow: hidden;
+            margin: 50px;
         }
         .container img {
             width: 100%;
@@ -187,6 +191,7 @@
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             height: 100%;
+            font-weight: bold;
         }
         .toggle-btn {
             position: absolute;
