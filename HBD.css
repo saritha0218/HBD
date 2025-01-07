@@ -5,10 +5,12 @@
         header {
             background-color: #333;
             color: white;
-            padding: 15px 20px;
+            padding: 35px 40px;
             display: flex;
             justify-content: space-around;
             align-items: center;
+            font-size: large;
+            font-weight: bold;
         }
         .option {
             cursor: pointer;
@@ -20,7 +22,7 @@
             background-color: #555;
         }
         .letter {
-            margin: 20px;
+            margin: 40px;
             padding: 15px;
             background-image: url(./BGL.jpg);
             border-radius: 8px;
@@ -116,7 +118,10 @@
          
 
         #story{
-            background-color: bisque;
+            /* background-color: bisque; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: medium;
+            font-weight: bold;
         }
         .s31{
             display: flex; 
