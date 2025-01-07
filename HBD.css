@@ -49,7 +49,7 @@
     display: none; /* Initially hidden */
     position: fixed;
     bottom: 100px;
-    right: 100px;
+    right: 70px;
     background-color: #ff6666;
     color: white;
     font-size: 54px;
@@ -128,6 +128,7 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: medium;
             font-weight: bold;
+            margin: 50px;
         }
         .s31{
             display: flex; 
@@ -148,7 +149,7 @@
             display: none;
         }
         .s31 img{
-            width: 600px;
+            width: 700px;
             height: 650px;
             object-fit: cover;
             margin-top: 4%;
@@ -163,6 +164,8 @@
             margin-top: -2%;
             margin-left: 4%;
             color:#069;
+            font-size: xx-large;
+            font-weight: bold;
         }
 
         .container {
