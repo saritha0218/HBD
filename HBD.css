@@ -32,7 +32,8 @@
             background-attachment: fixed;
             border-radius: 8px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-            word-spacing: 8px;
+            word-spacing: 10px;
+            margin-top: 150px;
         }
         .hidden-container {
             display: none;
@@ -102,6 +103,7 @@
             gap: 40px;
             margin: 40px;
             max-width: 700px;
+            margin-left: 110px;
         }
         .photo-paragraph-item {
             display: flex;
@@ -114,7 +116,7 @@
         }
         .photo-paragraph-item img {
             max-width: 100%;
-            height: auto;
+            height: 700px;
             border-radius: 8px;
         }
         .photo-paragraph-item p {
@@ -152,7 +154,7 @@
         }
         .photo-wrapper {
             width: 700px; 
-            height: 700px;
+            height: 900px;
             flex-shrink: 0; 
             scroll-snap-align: start; 
             overflow: hidden; 
@@ -214,15 +216,16 @@
         }
         .toggle-btn {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 20px;
+            right: 20px;
             font-size: 18px;
             background-color: rgba(0, 0, 0, 0.6);
             color: #fff;
             border: none;
             cursor: pointer;
-            padding: 5px 10px;
+            padding: 15px 20px;
             border-radius: 5px;
+            font-size: 50px;
         }
 
         
