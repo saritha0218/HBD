@@ -154,13 +154,11 @@
                 const paragraphs = parentDiv.querySelector('.paragraphs');
 
                 if (image.style.display !== 'none') {
-                    image.style.display = 'none'; // Hide the image
-                    paragraphs.style.display = 'block'; // Show the paragraphs
-                    button.textContent = '<'; // Update button symbol
+                    image.style.display = 'none'; 
+                    paragraphs.style.display = 'block'; 
                 } else {
-                    image.style.display = 'block'; // Show the image
-                    paragraphs.style.display = 'none'; // Hide the paragraphs
-                    button.textContent = '>'; // Update button symbol
+                    image.style.display = 'block'; 
+                    paragraphs.style.display = 'none'; 
                 }
             });
         });

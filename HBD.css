@@ -115,7 +115,7 @@
             display: none;
         }
         .photo-paragraph-item img {
-            max-width: 100%;
+            width: 600px;
             height: 700px;
             border-radius: 8px;
         }
@@ -154,7 +154,7 @@
         }
         .photo-wrapper {
             width: 700px; 
-            height: 900px;
+            height: 1100px;
             flex-shrink: 0; 
             scroll-snap-align: start; 
             overflow: hidden; 
