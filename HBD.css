@@ -32,6 +32,7 @@
             background-attachment: fixed;
             border-radius: 8px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            word-spacing: 8px;
         }
         .hidden-container {
             display: none;
@@ -47,8 +48,8 @@
         .floating-icon {
     display: none; /* Initially hidden */
     position: fixed;
-    bottom: 50px;
-    right: 40px;
+    bottom: 100px;
+    right: 100px;
     background-color: #ff6666;
     color: white;
     font-size: 54px;
@@ -147,8 +148,8 @@
             display: none;
         }
         .s31 img{
-            width: 400px;
-            height: 350px;
+            width: 600px;
+            height: 650px;
             object-fit: cover;
             margin-top: 4%;
             padding-bottom: 5%;
@@ -179,6 +180,7 @@
             text-align: center;
             overflow: hidden;
             margin: 50px;
+            margin-left: 100px;
         }
         .container img {
             width: 100%;
