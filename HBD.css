@@ -1,0 +1,196 @@
+        body {
+            margin: 0px;
+            background-color: bisque;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .option {
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .option:hover {
+            background-color: #555;
+        }
+        .letter {
+            margin: 20px;
+            padding: 15px;
+            background-image: url(./BGL.jpg);
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .hidden-container {
+            display: none;
+            position: relative;
+            border-radius: 8px;
+            z-index: 10;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+        .hidden-container::-webkit-scrollbar { 
+            display: none; /* For Chrome, Edge, and Safari */
+          }
+        .floating-icon {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6666;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+        .floating-icon:hover {
+            background-color: #ff4d4d;
+        }
+        .image-scroll-container {
+            display: flex;
+            overflow: hidden;
+            gap: 10px;
+            padding: 10px;
+        }
+        .image-scroll-container img {
+            height: 280px;
+            border-radius: 8px;
+            object-fit: cover;
+            width: 280px; /* Set a fixed width to ensure images align properly */
+        }
+        .scrolling-images {
+            display: flex;
+            gap: 20px;
+            animation: scrollImages 10s linear infinite;
+        }
+        .scrolling-images img {
+            flex-shrink: 0;
+        }
+        /* Scroll effect for images */
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-77%);
+            }
+        }
+        .photo-paragraph-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 40px;
+        }
+        .photo-paragraph-item {
+            align-items: center;
+            gap: 20px;
+        }
+        .photo-paragraph-container::-webkit-scrollbar {
+            display: none;
+        }
+        .photo-paragraph-item img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .photo-paragraph-item p {
+            max-width: 500px;
+            font-size: 1rem;
+        }
+
+/* US STARTS */
+         
+
+        #story{
+            background-color: bisque;
+        }
+        .s31{
+            display: flex; 
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            overflow-x:scroll;
+            gap: 6%;
+            padding: 7%;
+            padding-left: 0;
+            margin-right: 7%;
+            margin-left: 7%;
+            margin-top: 7%;
+            margin-bottom:-5%; 
+        }
+        .s31::-webkit-scrollbar {
+            display: none;
+        }
+        .s31 img{
+            width: 400px;
+            height: 350px;
+            object-fit: cover;
+            margin-top: 4%;
+            padding-bottom: 5%;
+            transition: transform 0.3s ease;
+        }
+        .s31 img:hover {
+  transform: scale(1.05);  /* Slight zoom effect */
+}
+        .s3h{
+            position:absolute;
+            margin-top: -2%;
+            margin-left: 4%;
+            color:#069;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .container > div {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .paragraphs {
+            display: none; /* Initially hidden */
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            height: 100%;
+        }
+        .toggle-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        
