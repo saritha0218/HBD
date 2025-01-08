@@ -83,7 +83,7 @@
         .scrolling-images {
             display: flex;
             gap: 20px;
-            animation: scrollImages 8s linear infinite;
+            animation: scrollImages 6s linear infinite;
         }
         .scrolling-images img {
             flex-shrink: 0;
@@ -116,7 +116,7 @@
         }
         .photo-paragraph-item img {
             width: 600px;
-            height: 700px;
+            height: 800px;
             border-radius: 8px;
         }
         .photo-paragraph-item p {
