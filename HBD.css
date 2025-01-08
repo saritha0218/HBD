@@ -182,7 +182,10 @@
             text-align: center;
             margin: 20px;
         }
-        
+        #favo{
+            text-align: center;
+            margin: 20px;
+        }
 
         .container {
             display: flex;
