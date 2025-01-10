@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Page</title>
-    <link rel="stylesheet" href="./HBD.css"
+    <link rel="stylesheet" href="./HBD.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -107,8 +107,15 @@
                    <br>⭐This was the first step into a world they had only imagined—a world of learning, challenges, and new experiences. The sprawling campus welcomed them with its towering buildings and the buzz of students all around. They didn’t know what lay ahead, but one thing was certain: this was the start of a journey that would shape their future.<br>A few days later, one of the girl’s friends talked about the boy to her. She mentioned how she had chatted with him the previous night. “He seems like a good person,” she said.
                     <br>⭐Later, the boy approached her and asked if he could borrow her bike to go outside the college for something. She handed him the keys to her scooty without hesitation.
                     <br>⭐You know who are those, You walked up to me nervously and asked, “Can I borrow your scooty for a quick errand?” It was our first interaction, but I handed you the keys without hesitation. You thanked me with a relieved smile and hurried off, leaving a small smile on my face.
+                    <br><br><button id="play-button">Our voices</button>
                 </p>
             </div>
+
+            <div>
+                <audio id="background-music">
+                <source src="bg.aac" type="audio/aac">
+                </audio>
+             </div>
 
                 <div class="container">
 
@@ -161,7 +168,10 @@
                             <img id="img6" src="./us5.jpeg" alt="Gallery Image 5">
                         </div>
                         <div class="photo-wrapper">
-                            <img id="img1" src="./us.jpeg" alt="Gallery Image 6">
+                            <img  src="./us.jpeg" alt="Gallery Image 6">
+                        </div>
+                        <div class="photo-wrapper">
+                            <img  src="./us6.jpeg" alt="Gallery Image 6">
                         </div>
                     </div>
                 </div>
@@ -171,6 +181,7 @@
     <!-- Floating Icon -->
     <button id="floating-icon" class="floating-icon" onclick="restoreView()">❤️</button>
 
+
     <script>
         const mainContent = document.getElementById("main-content");
         const youContainer = document.getElementById("you-container");
@@ -178,6 +189,33 @@
         const floatingIcon = document.getElementById("floating-icon");
         const body = document.body;
         const toggleButtons = document.querySelectorAll('.toggle-btn');
+        document.addEventListener('DOMContentLoaded', () => { 
+      const audio = document.getElementById('background-music');
+      const playButton = document.getElementById('play-button');
+      const maxPlays = 3;
+
+      let playCount = parseInt(sessionStorage.getItem('playCount')) || 0;
+
+      
+      playButton.addEventListener('click', () => {
+        if (playCount < maxPlays) {
+          audio.play().catch(err => console.error('Audio playback failed:', err));
+        } else {
+          alert('Audio has already been played the maximum number of times.');
+        }
+      });
+
+      
+      audio.addEventListener('ended', () => {
+        playCount++;
+        sessionStorage.setItem('playCount', playCount);
+
+        if (playCount < maxPlays) {
+          audio.play().catch(err => console.error('Audio playback failed:', err));
+        }
+      });
+    });
+
 
         toggleButtons.forEach(button => {
             button.addEventListener('click', () => {
